@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * execute - create process and executing program
+ * _execute - create process and executing program
  *@argv: pointer array
  *
  * Return: always 0

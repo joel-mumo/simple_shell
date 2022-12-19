@@ -3,6 +3,7 @@
 /**
  * read_line - prints prompt and reads a line
  *
+ * Return: character
  */
 
 char read_line(void)
