@@ -29,5 +29,5 @@ char read_line(void)
 			}
 		}
 	}
-	return (lineptr);
+	printf("%s\n", lineptr);
 }

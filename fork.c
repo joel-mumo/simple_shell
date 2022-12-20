@@ -9,7 +9,8 @@
 int _execute(char **argv)
 {
 	int status;
-	pid_t pid, wpid;
+	pid_t pid;
+	int x;
 
 	pid = fork();
 	if (pid == 0)
@@ -28,7 +29,7 @@ int _execute(char **argv)
 	else
 	{
 		do {
-			wpid = waitpid(pid, &status, WUNTRANCED);
+			waitpid(pid, &status, WUNTRACED);
 		} while (!WIFEXITED(status) && !WIFSIGNALED(status));
 	}
 	return (0);
