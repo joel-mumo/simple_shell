@@ -15,8 +15,7 @@ int _execute(char **argv)
 	pid = fork();
 	if (pid == 0)
 	{
-		x = execve(argv[0], argv, env);
-		if (x == -1)
+		if (execvp(argv[0], argv) == -1)
 		{
 			perror("Error:");
 		}
