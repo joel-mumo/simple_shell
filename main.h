@@ -10,4 +10,5 @@
 
 int _execute(char **argv);
 char read_line(void);
+char *get_path(char *cmd);
 #endif /*MAIN_H*/
