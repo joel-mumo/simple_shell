@@ -1,21 +1,20 @@
 #include "main.h"
 
 /**
- * _execute - create process and executing program
+ * execute - create process and executing program
  *@argv: pointer array
  *
  * Return: always 0
  */
-int _execute(char **argv)
+int execute(char **argv)
 {
 	int status;
 	pid_t pid;
-	int x;
-
+	
 	pid = fork();
 	if (pid == 0)
 	{
-		if (execvp(argv[0], argv) == -1)
+		if (execve(argv[0], argv, NULL) == -1)
 		{
 			perror("Error:");
 		}

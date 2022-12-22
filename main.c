@@ -46,6 +46,6 @@ int main(int argc, char **argv)
 			token = strtok(NULL, delim);
 		}
 		 argv[i] = NULL;
-		 execmd(argv);
+		 execute(argv);
 	} return (0);
 }
