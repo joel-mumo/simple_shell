@@ -8,7 +8,7 @@ char *get_path(char *cmd)
 {
 	char *path, *path_copy, *path_token, *file_path;
 	int cmd_len, dir_len;
-	struct stat buffer;
+	struct stat *buffer;
 
 	path = getenv("PATH");
 
