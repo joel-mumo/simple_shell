@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * _execute - create process and executing program
+ * execute - create process and executing program
  *@argv: pointer array
  *
  * Return: always 0
  */
 int execute(char **argv)
 {
-	char *cmd = NULL;
 	int status;
 	pid_t pid;
 	int x;
 
+	pid = fork();
 	if (pid == 0)
 	{
 		x = execve(argv[0], argv, NULL);
