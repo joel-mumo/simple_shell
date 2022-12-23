@@ -11,4 +11,5 @@
 
 int execute(char **argv);
 char *get_path(char *cmd);
+void execmd(char **argv);
 #endif /*MAIN_H*/
