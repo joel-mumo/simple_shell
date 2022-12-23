@@ -8,6 +8,6 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-void execute(char **argv);
+int execute(char **argv);
 char *get_path(char *cmd);
 #endif /*MAIN_H*/
